@@ -1,0 +1,327 @@
+
+body {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+
+
+header {
+    background-color: rgb(4, 74, 130);
+    padding: 10px;
+    min-width: 600px;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Три колонки одинаковой ширины */
+    color: white;
+    font-size: 20px;
+    align-items: center; /* Вертикальное центрирование */
+}
+
+.name
+{
+    grid-column: 1 / 2; /* Название сайта в первой колонке */
+    color: white;
+    font-size: 20px;
+    align-self: center; /* Вертикальное центрирование */
+
+}
+
+.logo
+{
+    grid-column: 2 / 3; /* Логотип во второй колонке */
+    text-align: center; /* Горизонтальное центрирование */
+    color: white;
+    font-size: 20px;
+    align-self: center; /* Вертикальное центрирование */
+}
+.info
+{
+    grid-column: 3 / 4; /* Информация в третьей колонке */
+    color: white;
+    font-size: 20px;
+    text-align: right; /* Горизонтальное выравнивание по правому краю */
+    align-self: center; /* Вертикальное центрирование */
+
+}
+.MAIN 
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr; /* Две колонки одинаковой ширины */
+    grid-template-rows: auto auto; /* Две строки: первая авто, вторая гибкая */
+    gap: 40px; /* Расстояние между элементами */
+}
+
+
+.MainL1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     font-size: 30px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     grid-column: 1 / 2;
+     grid-row: 1 / 2; /* Элемент займет две строки */
+     background-color: rgb(232, 240, 243);
+     border-color: brown;
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 300px;
+    text-align: center;
+}
+
+
+.order1 {
+    grid-column: 1 / 2; /* Элемент займет первую колонку */
+    grid-row: 2 / 3; /* Элемент займет вторую строку */
+    font-size: 90px;
+    background-color: rgb(149, 27, 31);
+    text-align: center;
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    text-decoration: none;
+    color: white;
+  }
+
+  .order2 {
+    font-size: 40pt;
+    background-color: rgb(149, 27, 31);
+    text-align: center;
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px auto; /* Центрирование с помощью auto */
+    width: 250px; /* Фиксированная ширина */
+  }
+.MainR1 {
+  grid-column: 2 / 3; /* Элемент займет вторую колонку */
+  grid-row: 1 / 3; /* Элемент займет первую строку */
+  background-color: rgb(232, 240, 243);
+}
+
+.promotion
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(232, 240, 243);
+}
+.timer {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.time-part {
+    background-color: red;
+    padding: 0 5px; /* Добавьте отступы, чтобы фон был виден */
+    width: 50px; /* Фиксированная ширина */
+    height: 50px; /* Фиксированная высота */
+    display: inline-block; /* Чтобы размеры применялись */
+    text-align: center; /* Центрирование текста */
+    line-height: 50px; /* Вертикальное центрирование текста */
+}
+.colon {
+    color: rgb(4, 74, 130); /* Задайте цвет для двоеточий */
+    padding: 0 5px; /* Добавьте отступы, чтобы цвет был виден */
+}
+.discount {
+    font-size: 1.5em;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.clients {
+    text-align: center;
+    top: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(232, 240, 243);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.clients li {
+    min-width: 100%;
+    max-width: 150px;
+    box-sizing: border-box;
+}
+
+ul{
+    display: grid;
+    justify-content: center; /* Центрирование содержимого по горизонтали */ 
+}
+.clients ul
+{
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Четыре колонки с автоматической шириной */
+    gap: 40px; /* Расстояние между элементами */
+    padding: 0;
+    margin: 0;
+    
+}
+.IMGP
+{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(4, 74, 130);
+    border-radius: 50px;
+}
+
+.Work
+{
+    text-align: center;
+    background-color: rgb(232, 240, 243);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Work li
+{
+    min-width: 100%;
+    max-width: 150px;
+    box-sizing: border-box;
+}
+
+.Work ul
+{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Четыре колонки с автоматической шириной */
+    gap: 40px; /* Расстояние между элементами */
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.repeat{
+    background-color: rgb(232, 240, 243);
+    text-align: center;
+    font-size: 30pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: rgb(4, 74, 130);
+    color: white;
+    padding: 10px;
+}
+
+.low-tab{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Три колонки одинаковой ширины */
+}
+.social-media
+{
+    grid-column: 1 / 2; /* Социальные медиа в первой колонке */
+}
+.info2
+{
+    grid-column: 2 / 3; /* Информация во второй колонке */
+    text-align: right;
+}
+.low-tab a
+{
+  color: white;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    max-height: 800px;
+    margin: 50px auto;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider-inner {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.slides {
+    width: 400%;
+    transition: all 0.5s;
+    display: flex;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    max-height: 800px;
+    flex-shrink: 0;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrowleft,.arrowright
+{
+    cursor: pointer;
+    background-color: rgb(232, 240, 243);
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(4, 74, 130);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.arrowleft {
+    left: 0;
+}
+
+.arrowright {
+    right: 0;
+}
